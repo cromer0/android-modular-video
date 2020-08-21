@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/video_content" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/available_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimary"
+            app:backgroundTint="@color/colorPrimary"
+            app:maxImageSize="45dp"
+            app:borderWidth="0dp"
+            app:fabSize="normal" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/busy_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/colorAccent"
+            app:backgroundTint="@color/colorAccent"
+            app:maxImageSize="45dp"
+            app:borderWidth="0dp"
+            app:fabSize="normal" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/offline_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/colorGray"
+            app:backgroundTint="@color/colorGray"
+            app:maxImageSize="45dp"
+            app:borderWidth="0dp"
+            app:fabSize="normal" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/friendStatus"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:drawableTop="@drawable/ic_videocam_white_24dp"
+        android:drawableBottom="@drawable/ic_mic_white_24dp"
+        android:layout_width="50dp"
+        android:layout_height="match_parent" />
+</RelativeLayout>
